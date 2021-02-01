@@ -1,0 +1,42 @@
+create a ssh key
+
+=> ssh-keygen -t rsa -b 4096 -C 'msg'
+
+check generated keys : ls ~/.ssh
+
+add the public key to your github  account
+
+
+Vagrant development server
+
+=> initialize your project with an image : $ vagrant init ubuntu/bionic64
+   it generates a vagrant file
+
+=> start vagrant server :           $ vagrant up
+=> connect to vagrant server :      $ vagrant ssh
+=> disconnect from the machine :    $ exit
+
+   Note : our local project folder will be synchronized with the files 
+   in /vagrant folder in vagrant server.
+
+python virtual environment
+
+=> create a virtual env : $ python -m venv path/virtual-env-name
+=> activate virtual env : $ source path/venv-name/bin/activate
+
+requirements
+
+=> create a requirements.txt file and list all your installation requirements
+   $ pip install -r requirements.txt
+
+
+Migrations
+
+=> create the migration files for a specific app : $ python manage.py makemigrations <appname>
+=> migrate : $ python manage.py migrate
+
+Push to github
+=> git add .
+=> git commit -am 'msg'
+=> git push origin
+

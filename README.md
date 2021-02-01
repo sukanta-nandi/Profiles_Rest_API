@@ -18,3 +18,9 @@ $ cd /vagrant
 # create a python virtual environment at home
 $ python -m venv ~/<venv_name>
 ```
+4. Install the requirements
+
+```bash
+$ pip install -r requirements.txt
+
+```
