@@ -1,7 +1,7 @@
 # RESTAPI for User Profile.
 
 # Project Setup
-1. Install Vagrant for your system
+1. Install Virtualbox and Vagrant for your system
 
 2. Navigate to the project loaction
 ```bash
