@@ -39,4 +39,3 @@ Push to github
 => git add .
 => git commit -am 'msg'
 => git push origin
-
