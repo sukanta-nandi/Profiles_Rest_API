@@ -30,12 +30,22 @@ requirements
    $ pip install -r requirements.txt
 
 
-Migrations
-
-=> create the migration files for a specific app : $ python manage.py makemigrations <appname>
-=> migrate : $ python manage.py migrate
-
 Push to github
 => git add .
 => git commit -am 'msg'
 => git push origin
+
+
+Django Notes:
+
+Django Migrations
+
+=> create the migration files for a specific app : $ python manage.py makemigrations <appname>
+=> migrate : $ python manage.py migrate
+
+Django Super user
+
+=> create super user : $ python manage.py createsuperuser
+=> enable django app to admin site : goto admin.py of that app and import <from appname import models>
+                                    and add admin.site.register(models.Modelname)
+
